@@ -1,9 +1,9 @@
+import 'dotenv/config'
 import express from 'express';
 
 const app = express();
-console.log(app);
 
-const port = 3838;
+const port = process.env.PORT || 3000;
 
 let teadata = [];
 let nextId = 1;
